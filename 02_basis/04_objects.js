@@ -32,3 +32,12 @@ const obj2={3:"c",4:"d"} // create 2nd object
 obj3={...obj1,...obj2} // combine 2 object by spread operator ...
 console.log(obj3);
 
+const course={
+    coursename:"JS In Hindi",
+    courseprice:"999",
+    courseteacher:"Nitesh"
+}
+// how to destructure an object in js 
+
+const {courseprice}=course // that in bracket those value without . as a object are called destructure of object 
+console.log(courseprice);
