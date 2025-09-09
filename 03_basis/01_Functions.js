@@ -21,6 +21,7 @@ console.log("Result ",result);
 function loginUserMessage(username){
     return `${username} Just Logged In`
 }
-console.log(loginUserMessage("Nitesh"));
+//console.log(loginUserMessage("Nitesh"));
+
 
 
