@@ -9,7 +9,7 @@ function DB(){
 (function DB1(){
     console.log('DATABASECONNECTED'); 
 })() ;
-// to create IIFE Function Just NOrmal Function Repad in Pranthises () is called IIFE
+// to create IIFE Function Just NOrmal Function Rep in Pranthises () is called IIFE
 
 /// IIFE USING ARROW FUNCTION 
 
