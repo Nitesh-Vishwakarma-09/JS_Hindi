@@ -12,6 +12,7 @@ myArr.pop()
 console.log(myArr); // this used for remove last element from array 
 
 myArr.unshift(9) // this is used add element in the first of array
+console.log(myArr);
 myArr.shift(); // this is used for remove first element from  array 
 console.log(myArr);
 
