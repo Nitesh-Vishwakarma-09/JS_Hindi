@@ -23,5 +23,10 @@ map.set("IN","India") // that no add in because map only store unique values
 for (const [key ,value] of map) { // that for off loop is used for printing key and value both in a time by using the [] brackets
     console.log(key,":-",value);
     
-    
+    //++ Maps Are Itertable & Objects are not Iterateable 
 }
+
+const Myobject={
+    'game1':'PUBG',
+    'game2':'FS14'
+} // in this object for off loop in work because this object are not iterateable 
