@@ -32,4 +32,4 @@ const myadd=[
 myadd.forEach( (item) => {
     console.log(item.languageFileName);
     
-} ) // kisi array ke andar object ki values access karne ke liye for each ka use karenge woh bhi arrow function wali method and acccess karke console log ho jayega 
+} ) // kisi array ke andar object ki values access karne ke liye for each ka use karenge woh bhi arrow function wali method and acccess karke console log ho jayega......
