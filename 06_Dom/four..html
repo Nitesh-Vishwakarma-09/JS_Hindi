@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiteshSE | DOM </title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+  <ul class="language">
+    <li>Javascript</li>
+  </ul>  
+</body>
+<script>
+    function addLanguage(langName){
+       const li= document.createElement('li'); // 1st Way 
+       li.innerHTML =`${langName}`
+       document.querySelector(".language").appendChild(li)
+    }
+    addLanguage("Python")
+    addLanguage("Typescript")
+
+    // 2nd Way to add li by using function optimized way
+    function addOptiLanguage(langname){
+        const li = document.createElement("li");   
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector(".language").appendChild(li)
+    }
+    addOptiLanguage("Java") 
+
+    // Edit Values By Dom 
+
+    const thirdlang = document.querySelector("li:nth-child(2)")
+    thirdlang.innerHTML="Ruby"
+// remove element by dom 
+
+const lastlang = document.querySelector("li:last-child")
+lastlang.remove()
+</script>
+</html>
