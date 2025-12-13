@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing Images </h2>
+    <div>
+        <ul id="images">
+              <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log(e);
+    //     console.log('ul list clicked ');
+        
+        
+    // })
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log(e);
+        
+    // },false)
+    // Events To Read By MDN Reference 
+    // 1.type 2.timestamp 3.defaultPrevented 4.Target 5.ToElement 
+    // 6.srcElement 7.CurrentTarget
+    // For Interview purpose ClientX,ClientY,ScreenX,ScreenY 
+    // altkey, ctrlkey,shiftkey,keycode
+//________________EVENT PROPOGATION____________________
+// In Event PRoprgation their are 2 types 
+// 1.Event Bubble that = esa event jis me do event ho first aur last tho event bubble me last se first aata h 
+//2. Event Capturing m = esa event jis m do event ho first aur last tho yeh first se last hi jata 
+ // aur ek method hoti h event ki function e ki .stop progation() isme event bubble hota par last wala execute hota aur first par nhi jata 
+
+//  document.getElementById('google').addEventListener('click',function(e){
+//     e.preventDefault();
+//     e.stopPropagation();
+//     console.log('google clicked');
+    
+//  })
+    document.querySelector('#images').addEventListener('click',function(e){
+     //console.log(e.target);
+     if(e.target.tagName === 'IMG'){
+        console.log(e.target.id);
+        let removeit=e.target.parentNode
+     removeit.remove()
+     }
+     
+    })
+</script>
+</html>
