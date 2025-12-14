@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learning JavaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const SayDate=function(){
+     console.log("Nitesh",Date.now());
+     
+    }
+      // setInterval m jo bhi function ya handler aapne diya h aur jo time millisecond m diya woh us din ke bd baar baar execute hota rhega 
+    let IntervalID;
+    
+    document.querySelector('#start').addEventListener('click',function(){
+    IntervalID= setInterval(SayDate,1000)
+    })
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(IntervalID)
+    })
+</script>
+</html>
