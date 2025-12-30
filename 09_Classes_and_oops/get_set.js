@@ -19,4 +19,5 @@ class User{
 
 const Nitesh = new User("Nitesh@12gmail.com","nitesh1")
 console.log(Nitesh.email);
+console.log(Nitesh.password);
 
