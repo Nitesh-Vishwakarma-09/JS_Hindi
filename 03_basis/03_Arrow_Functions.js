@@ -7,9 +7,9 @@ const user={
     }
 }
 
-// user.WelcomeMessage()
-// user.username="Raja"
-// user.WelcomeMessage()
+user.WelcomeMessage()
+user.username="Raja"
+user.WelcomeMessage()
 
 //console.log(this); // Note :-    Output:-{} Because in node environment this keyword show the blank Currly Braces
 
