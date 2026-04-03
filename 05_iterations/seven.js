@@ -2,7 +2,7 @@ const MyNumbers=[1,2,3,4,5,6,7,8,9,10]
 
 const val=MyNumbers.map( (num) => num+10)
 
-// console.log(val); // map is also method that works same as filter or for each loop but map has return type without return declare 
+ console.log(val); // map is also method that works same as filter or for each loop but map has return type without return declare 
 
 const newnum=MyNumbers
                       .map( (num) => num *10)
